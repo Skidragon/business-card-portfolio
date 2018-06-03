@@ -30,7 +30,7 @@ body {
   flex-direction: column;
   padding: 20px 0 0 2.22222222%;
   color: whitesmoke;
-  background: rgba(87, 165, 255, 0.349);
+  background: #2a5485;
   border-top-left-radius: 5px;
   border-bottom-right-radius: 15px;
   height: 150px;
@@ -54,7 +54,6 @@ body {
   width: 24.44444444%;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background: rgba(87, 165, 255, 0.349);
 }
 .categories .wrapper {
   display: flex;
@@ -64,15 +63,14 @@ body {
   height: 100%;
   padding: 20px 2.22222222%;
   border-bottom: 3px solid black;
+  background: #2a5485;
+  cursor: pointer;
+}
+.categories .wrapper:hover {
+  background: #3caae9;
 }
 .categories .wrapper:last-child {
   border-bottom: none;
-}
-.categories .btn-category:first-child {
-  border-top-right-radius: 15px;
-}
-.categories .btn-category:last-child {
-  border-bottom-right-radius: 15px;
 }
 .categories .topic-category {
   font-size: 3rem;

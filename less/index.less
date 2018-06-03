@@ -21,6 +21,26 @@ body {
     .border-radius(5px, @border-radius-card-corner, 
                             @border-radius-card-corner, 
                                 @border-radius-card-corner);
+
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 0 (20% / @container-width) * 100;
+    color: whitesmoke;
+    background: @card-blue-bg;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: @border-radius-card-corner;
+    height: 150px;
+    width: 350px;
+    .name {
+        font-size: 5rem;
+    }
+    .job-position {
+        display: inline-block;
+        font-size: 3rem;
+        width: 100%;
+}
 }
 
 .categories {

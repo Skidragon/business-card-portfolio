@@ -67,7 +67,7 @@ body {
   cursor: pointer;
 }
 .categories .wrapper:hover {
-  background: #3caae9;
+  background: #2987bd;
 }
 .categories .wrapper:first-child {
   border-top-right-radius: 15px;

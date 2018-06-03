@@ -18,7 +18,7 @@ body {
     transform: translate(-50%, -50%);
     width: 80%;
     max-width: @container-width;
-    height: 500px;
+    height: 600px;
     font-size: 1.6rem;
     background: @card-main-bg;
     .border-radius(5px, @border-radius-card-corner, 
@@ -36,7 +36,7 @@ body {
 .intro {
     display: flex;
     flex-direction: column;
-    padding: 20px 0 0 (20% / @container-width) * 100;
+    padding: @card-align-top 0 0 (20% / @container-width) * 100;
     color: whitesmoke;
     background: @card-blue-bg;
     border-top-left-radius: 5px;
@@ -72,6 +72,7 @@ body {
         height: 100%;
         padding: 20px (20% / @container-width) * 100;
         border-bottom: 3px solid black;
+      
         &:last-child {
             border-bottom: none;
         }

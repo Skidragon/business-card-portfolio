@@ -7,32 +7,50 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href = "css/index.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
     <div class="card-container">
         <section class="intro">
-            <h1 class = "name">Simon Davis</h1>
-            <h2 class = "job-position">Web Developer</h2>
+            <h1 class="name">Simon Davis</h1>
+            <h2 class="job-position">Web Developer</h2>
         </section>
 
         <section class="categories">
             <!-- Portfolio, Social Media, About me, Education -->
-            <div class="btn-portfolio btn-category">
-                <img src="assets/icons/baseline-work_outline-24px.svg" class="icon icon-category">
+            <div class="wrapper">
+                <h2 class="topic-category portfolio-topic">Portfolio</h2>
+                <div class="btn-portfolio btn-category">
+                    <img src="assets/icons/baseline-work_outline-24px.svg" class="icon icon-category">
+                </div>
             </div>
-            <div class="btn-social btn-category">
-                <img src="assets/icons/baseline-share-24px.svg" class="icon icon-category">
+            <!-- portfolio wrapper -->
+            <div class="wrapper">
+                <h2 class="topic-category social-topic">Social</h2>
+                <div class="btn-social btn-category">
+                    <img src="assets/icons/baseline-share-24px.svg" class="icon icon-category">
+                </div>
             </div>
-            <div class="btn-about-me btn-category">
-                <img src="assets/icons/baseline-face-24px.svg" class="icon icon-category">
+            <!-- social wrapper-->
+            <div class="wrapper">
+                <h2 class="topic-category about-me-topic">About me</h2>
+                <div class="btn-about-me btn-category">
+                    <img src="assets/icons/baseline-face-24px.svg" class="icon icon-category">
+                </div>
             </div>
-            <div class="btn-education btn-category">
-                <img src="assets/icons/baseline-cast_for_education-48px.svg" class="icon icon-category">
-            </div>
-        </section> <!-- categories section -->
-    </div> <!-- card-container -->
+            <!-- about me wrapper-->
+            <div class="wrapper">
+                    <h2 class="topic-category about-me-topic">Contact</h2>                                
+                <div class="btn-contact btn-category">
+                    <img src="assets/icons/baseline-cast_for_education-48px.svg" class="icon icon-category">
+                </div>
+            </div> 
+            <!-- contact wrapper -->
+        </section>
+        <!-- categories section -->
+    </div>
+    <!-- card-container -->
 </body>
 
 </html>

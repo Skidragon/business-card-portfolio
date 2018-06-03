@@ -76,8 +76,12 @@ body {
         &:hover {
             background: @card-blue-highlight;
         }
+        &:first-child {
+            border-top-right-radius: @border-radius-card-corner;
+        }
         &:last-child {
             border-bottom: none;
+            border-bottom-right-radius: @border-radius-card-corner;
         }
     } //wrapper
 

@@ -69,8 +69,12 @@ body {
 .categories .wrapper:hover {
   background: #3caae9;
 }
+.categories .wrapper:first-child {
+  border-top-right-radius: 15px;
+}
 .categories .wrapper:last-child {
   border-bottom: none;
+  border-bottom-right-radius: 15px;
 }
 .categories .topic-category {
   font-size: 3rem;

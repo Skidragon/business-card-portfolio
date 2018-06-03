@@ -21,4 +21,31 @@ body {
     .border-radius(5px, @border-radius-card-corner, @border-radius-card-corner, @border-radius-card-corner);
 }
 
-}
+.categories {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 80px;
+    border-top-right-radius: @border-radius-card-corner;
+    border-bottom-right-radius: @border-radius-card-corner;
+    background: whitesmoke;
+    .btn-category {
+        display: flex;
+        height: auto;
+        padding: 10px;
+        &:first-child {
+        border-top-right-radius: @border-radius-card-corner;
+        }
+        &:last-child {
+        border-bottom-right-radius: @border-radius-card-corner;
+        }
+    }
+    .icon-category {
+        height: 80px;
+    }
+} // categories section
+
+

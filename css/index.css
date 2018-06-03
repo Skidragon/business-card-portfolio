@@ -51,21 +51,29 @@ body {
   position: absolute;
   right: 0;
   height: 100%;
-  width: 10%;
+  width: 27.5%;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background: rgba(87, 165, 255, 0.349);
 }
-.categories .btn-category {
+.categories .wrapper {
   display: flex;
-  height: auto;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
   padding: 20px 2.5%;
+  border-bottom: 3px solid black;
 }
 .categories .btn-category:first-child {
   border-top-right-radius: 15px;
 }
 .categories .btn-category:last-child {
   border-bottom-right-radius: 15px;
+}
+.categories .topic-category {
+  font-size: 3rem;
+  color: whitesmoke;
 }
 .categories .icon-category {
   height: 80px;

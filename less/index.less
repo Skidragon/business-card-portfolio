@@ -60,20 +60,30 @@ body {
     position: absolute;
     right: 0;
     height: 100%;
-    width: (80% / @container-width) * 100;
+    width: (220% / @container-width) * 100;
     border-top-right-radius: @border-radius-card-corner;
     border-bottom-right-radius: @border-radius-card-corner;
     background: @card-blue-bg;
-    .btn-category {
+    .wrapper {
         display: flex;
-        height: auto;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
         padding: 20px (20% / @container-width) * 100;
+        border-bottom: 3px solid black;
+    }
+    .btn-category {
         &:first-child {
         border-top-right-radius: @border-radius-card-corner;
         }
         &:last-child {
         border-bottom-right-radius: @border-radius-card-corner;
         }
+    }
+    .topic-category {
+        font-size: 3rem;
+        color: whitesmoke;
     }
     .icon-category {
         height: 80px;

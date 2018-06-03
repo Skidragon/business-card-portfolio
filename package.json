@@ -18,6 +18,9 @@
   "homepage": "https://github.com/Skidragon/business-card-portfolio#readme",
   "devDependencies": {
     "bootstrap": "^4.1.1",
+    "browser-sync": "^2.24.4",
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.5.0",
     "jquery": "^3.3.1",
     "popper.js": "^1.14.3"
   }

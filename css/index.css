@@ -1,14 +1,45 @@
 body {
   box-sizing: border-box;
   font-size: 62.5%;
+  background: #414141;
 }
 .card-container {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  max-width: 800px;
   width: 80%;
+  max-width: 800px;
   height: 500px;
-  background: darkgrey;
+  background: #dadada;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.categories {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 80px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: whitesmoke;
+}
+.categories .btn-category {
+  display: flex;
+  height: auto;
+  padding: 10px;
+}
+.categories .btn-category:first-child {
+  border-top-right-radius: 15px;
+}
+.categories .btn-category:last-child {
+  border-bottom-right-radius: 15px;
+}
+.categories .icon-category {
+  height: 80px;
 }

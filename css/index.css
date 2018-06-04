@@ -133,6 +133,7 @@ body {
 }
 .card-container {
   display: flex;
+  justify-content: space-between;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -162,6 +163,17 @@ body {
   height: 150px;
   width: 350px;
 }
+@media (max-height: 599px) {
+  .intro {
+    justify-content: center;
+    padding: 0 0 0 2.22222222%;
+    height: 100%;
+    width: 100%;
+    border-right: 3px solid black;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 0;
+  }
+}
 .intro .name {
   font-size: 5rem;
 }
@@ -174,12 +186,15 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  position: absolute;
-  right: 0;
   height: 100%;
   width: 24.44444444%;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+}
+@media (max-height: 599px) {
+  .categories {
+    width: 48.88888889%;
+  }
 }
 .categories .wrapper {
   display: flex;

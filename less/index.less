@@ -31,6 +31,15 @@ body {
     &:hover {
         box-shadow: -9px 10px 5px 0px rgba(0, 179, 224, 0.055);
     }
+    @media @phone-landscape {
+        width: 100%;
+        height: 100%;
+    }
+    @media @phone-portrait {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
 } //card-container
 
 
@@ -49,17 +58,34 @@ body {
         padding: 0 0 0 (20% / @container-width) * 100;        
         height: 100%;
         width: 100%;
-        border-right: 3px solid black;
+        border-right: @standard-border-line;
         border-bottom-left-radius: @border-radius-card-corner;
         border-bottom-right-radius: 0;
     }
+    @media @phone-portrait {
+        align-items: center;
+        flex-direction: column;
+        border-bottom: @standard-border-line;
+        border-radius: 0;
+        padding: 0;
+        width: 100%;
+    }
     .name {
+        display: flex;
+        justify-content: flex-start;
         font-size: 5rem;
+        @media @phone-portrait {
+            justify-content: center;
+        }
     }
     .job-position {
-        display: inline-block;
+        display: flex;
+        justify-content: flex-start;
         font-size: 3rem;
         width: 100%;
+        @media @phone-portrait {
+            justify-content: center;
+        }
     }
 } // intro section
 
@@ -74,6 +100,14 @@ body {
     @media @phone-landscape {
         width: (440% / @container-width) * 100;
     }
+    @media @phone-portrait {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 100%;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
     .wrapper {
         display: flex;
         flex-direction: column;
@@ -81,9 +115,10 @@ body {
         align-items: center;
         height: 100%;
         padding: 20px (20% / @container-width) * 100;
-        border-bottom: 3px solid black;
+        border-bottom: @standard-border-line;
         background: @card-blue-bg;
         cursor: pointer;
+        
         &:hover {
             background: @card-blue-highlight;
         }
@@ -92,13 +127,18 @@ body {
         }
         &:first-child {
             border-top-right-radius: @border-radius-card-corner;
+            @media @phone-portrait {
+                border-radius: 0;
+            }
         }
         &:last-child {
             border-bottom: none;
             border-bottom-right-radius: @border-radius-card-corner;
+            @media @phone-portrait {
+                border-radius: 0;
+            }
         }
-
-    
+       
     } //wrapper
 
     .topic-category {
@@ -107,6 +147,7 @@ body {
         @media (min-height: 600px) and (max-height: 700px) {
             font-size: 2.4rem;
         }
+       
     }
     .icon-category {
         height: 80px;

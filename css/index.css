@@ -210,6 +210,9 @@ body {
 .categories .wrapper:hover {
   background: #2987bd;
 }
+.categories .wrapper:active {
+  background: #36a5e6;
+}
 .categories .wrapper:first-child {
   border-top-right-radius: 15px;
 }
